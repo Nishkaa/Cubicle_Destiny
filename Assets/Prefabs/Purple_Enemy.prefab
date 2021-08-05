@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3619137823321703363}
   - component: {fileID: 1549014287030307701}
   - component: {fileID: 478166840715238009}
-  - component: {fileID: 2306532172296858716}
   - component: {fileID: 6386161527997783404}
   - component: {fileID: 4158347302265786608}
   - component: {fileID: 393485516277961499}
@@ -99,24 +98,6 @@ CapsuleCollider:
   m_Height: 2.09
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2306532172296858716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2751988633600139521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab53fba594a22bd4ab4cc5f483517947, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forestSize: 25
-  elementSpacing: 3
-  elements:
-  - name: Purple_Enemy
-    density: 0
-    prefabs: []
 --- !u!114 &6386161527997783404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4827,7 +4808,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: f00b273c0881ddb4492b7fb7027b149e, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0

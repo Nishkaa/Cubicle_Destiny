@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public AudioClip Jump;
+    AudioSource audioSource;
+
     public float speed = 25.0F;
     public float jumpSpeed = 8.0F;
     public float gravity = 20.0F;
@@ -15,7 +18,8 @@ public class Player : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        Cursor.visible = true;
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -28,13 +32,19 @@ public class Player : MonoBehaviour
             //Feed moveDirection with input.
             moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
             moveDirection = transform.TransformDirection(moveDirection);
+            
             //Multiply it by speed.
             moveDirection *= speed;
+
             //Jumping
-            if (Input.GetButton("Jump"))
+            if (Input.GetButton("Jump")) {
                 moveDirection.y = jumpSpeed;
 
+                //Jumping Sound
+                audioSource.PlayOneShot(Jump, 0.3F);
+            }
         }
+
         turner = Input.GetAxis("Mouse X") * sensitivity;
         looker = -Input.GetAxis("Mouse Y") * sensitivity;
         if (turner != 0)

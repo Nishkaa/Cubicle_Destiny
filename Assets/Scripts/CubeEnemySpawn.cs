@@ -18,7 +18,7 @@ public class CubeEnemySpawn : MonoBehaviour
 				Element element = elements[0];
 				if (element.CanPlace())
 				{
-					Vector3 position = new Vector3(x, 10f, z);
+					Vector3 position = new Vector3(x, 3f, z);
 					Vector3 offset = new Vector3(Random.Range(-0.75f, 0.75f), 0f, Random.Range(-0.75f, 0.75f));
 					Vector3 rotation = new Vector3(Random.Range(0, 5f), Random.Range(0, 360f), Random.Range(0, 5f));
 					Vector3 scale = Vector3.one * Random.Range(1.0f, 1.0f);

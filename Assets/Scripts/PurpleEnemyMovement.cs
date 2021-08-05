@@ -31,8 +31,10 @@ public class PurpleEnemyMovement : MonoBehaviour
         // change player name for the name of your players game object
        if (col.gameObject.name == "Player")
         {
+            
             Destroy(GameObject.FindWithTag("Player"));
             SceneManager.LoadScene("TheWorld");
+     
         }
     }
 }

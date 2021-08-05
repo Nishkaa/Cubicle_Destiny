@@ -7,7 +7,7 @@ public class PointBonus : MonoBehaviour
 {
 
     // Start is called before the first frame update
-  
+
     void OnTriggerEnter(Collider col)
     {
  
