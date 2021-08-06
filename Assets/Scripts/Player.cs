@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public AudioClip Jump;
-    AudioSource audioSource;
-
     public float speed = 25.0F;
     public float jumpSpeed = 8.0F;
     public float gravity = 20.0F;
@@ -19,7 +16,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         Cursor.visible = true;
-        audioSource = GetComponent<AudioSource>();
+   
     }
 
     // Update is called once per frame
@@ -39,9 +36,9 @@ public class Player : MonoBehaviour
             //Jumping
             if (Input.GetButton("Jump")) {
                 moveDirection.y = jumpSpeed;
-
+                FindObjectOfType<SoundManager>().Play("JumpingSound");
                 //Jumping Sound
-                audioSource.PlayOneShot(Jump, 0.3F);
+              
             }
         }
 

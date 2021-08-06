@@ -472,7 +472,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beda9bdea803b88449edd796140d05cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Fire: {fileID: 0}
   Player: {fileID: 0}
   begin: 0
   dist: 10

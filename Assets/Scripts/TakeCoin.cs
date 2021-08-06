@@ -2,14 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 public class TakeCoin : MonoBehaviour
 {
-    public AudioClip CoinTake;
-    AudioSource audioSource;
-
-    public AudioClip ReachedGoal;
 
 
     public ParticleSystem CoinPickUpEffect;
@@ -22,8 +19,6 @@ public class TakeCoin : MonoBehaviour
     public int seconds = 1;
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
-        audioSource = GetComponent<AudioSource>();
 
         TenPointsMsg.SetActive(false);
         TwentyFivePointsMsg.SetActive(false);
@@ -38,8 +33,7 @@ public class TakeCoin : MonoBehaviour
         
         if (other.transform.tag == "Coin")
         {
-
-            audioSource.PlayOneShot(CoinTake, 10.0F);
+            FindObjectOfType<SoundManager>().Play("CoinTake");
             CoinPickUpEffect.Emit(200);
             coin++;
             textCoins.text = coin.ToString();
@@ -48,34 +42,38 @@ public class TakeCoin : MonoBehaviour
         }
         if(coin == 10)
         {
-            audioSource.PlayOneShot(ReachedGoal, 2F);
+            FindObjectOfType<SoundManager>().Play("Raise");
             TenPointsMsg.SetActive(true);
             StartCoroutine(WaitForSec());
         }
         if (coin == 25)
         {
-            audioSource.PlayOneShot(ReachedGoal, 2F);
+            FindObjectOfType<SoundManager>().Play("Raise");
+      
             TwentyFivePointsMsg.SetActive(true);
             StartCoroutine(WaitForSec());
 
         }
         if (coin == 50)
         {
-            audioSource.PlayOneShot(ReachedGoal, 2F);
+            FindObjectOfType<SoundManager>().Play("Raise");
+        
             FiftyPointsMsg.SetActive(true);
             StartCoroutine(WaitForSec());
 
         }
         if (coin == 75)
         {
-            audioSource.PlayOneShot(ReachedGoal, 2F);
+            FindObjectOfType<SoundManager>().Play("Raise");
+       
             SeventyFivePointsMsg.SetActive(true);
             StartCoroutine(WaitForSec());
 
         }
         if (coin == 100)
         {
-            audioSource.PlayOneShot(ReachedGoal, 2F);
+            FindObjectOfType<SoundManager>().Play("Raise");
+            
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             OneHundred.SetActive(true);
             StartCoroutine(WaitForSec());

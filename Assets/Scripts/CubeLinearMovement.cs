@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
+using System;
+using UnityEngine.Audio;
 public class CubeLinearMovement : MonoBehaviour
 {
-    public AudioClip Fire;
-    //AudioSource audioSource;
-
+   // public AudioClip PlayerDeath;
+   // AudioSource audioSource;
     public Transform Player;
     public float begin;
     public float dist = 5;
@@ -16,6 +17,7 @@ public class CubeLinearMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       // audioSource = GetComponent<AudioSource>();
         //audioSource = GetComponent<AudioSource>();
         begin = transform.position.x;
         dir = 1;
@@ -24,7 +26,7 @@ public class CubeLinearMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       // audioSource.PlayOneShot(Fire, 0.2F);
+      //  audioSource.PlayOneShot(PlayerDeath, 2.0F);
 
         if (transform.position.x > begin + dist) { dir = -1; }
         else { if (transform.position.x < begin - dist) { dir = 1; } }
@@ -35,7 +37,7 @@ public class CubeLinearMovement : MonoBehaviour
         // change player name for the name of your players game object
         if (col.gameObject.name == "Player")
         {
-
+          //  FindObjectOfType<SoundManager>().Play("PlayerDeath");
             Destroy(GameObject.FindWithTag("Player"));
             SceneManager.LoadScene("TheWorld");
 

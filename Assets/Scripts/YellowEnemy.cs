@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
+using System;
+using UnityEngine.Audio;
 public class YellowEnemy : MonoBehaviour
 {
+
     public NavMeshAgent enemy;
     public Transform Player;
     // Start is called before the first frame update
@@ -23,6 +26,7 @@ public class YellowEnemy : MonoBehaviour
         // change player name for the name of your players game object
         if (col.gameObject.name == "Player")
         {
+          //  FindObjectOfType<SoundManager>().Play("PlayerDeath");
             Destroy(GameObject.FindWithTag("Player"));
             SceneManager.LoadScene("TheWorld");
         }

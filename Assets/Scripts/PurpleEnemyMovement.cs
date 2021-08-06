@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
+using System;
+using UnityEngine.Audio;
 public class PurpleEnemyMovement : MonoBehaviour
 {
-    
+   // public AudioClip PlayerDeath;
+   // AudioSource audioSource;
+
     public Transform Player;
     public float begin;
     public float dist = 5;
@@ -14,8 +18,9 @@ public class PurpleEnemyMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       // audioSource = GetComponent<AudioSource>();
         //Moving on its own when theres no player;
-       begin = transform.position.x;
+        begin = transform.position.x;
        dir = 1;
     }
 
@@ -28,10 +33,10 @@ public class PurpleEnemyMovement : MonoBehaviour
     }
     void OnCollisionEnter(Collision col)
     {
-        // change player name for the name of your players game object
+      
        if (col.gameObject.name == "Player")
         {
-            
+          //  FindObjectOfType<SoundManager>().Play("PlayerDeath");
             Destroy(GameObject.FindWithTag("Player"));
             SceneManager.LoadScene("TheWorld");
      
