@@ -72,27 +72,11 @@ public class CubeEnemy : MonoBehaviour
     }
     private void AttackPlayer()
     {
-
-       // agent.SetDestination(transform.position);
-        //transfrom.LookAt(player);
     }
     private void OnDrawGizmosSelected()
     {
-        //Gizmos.color = Color.red;
-      //  Gizmos.DrawWireSphere(transform.position, attackRange);
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, sightRange);
-    }
-
-  
-    void OnCollisionEnter(Collision col)
-    {
-      if (col.gameObject.name == "Player")
-        {
-            Destroy(GameObject.FindWithTag("Player"));
-            SceneManager.LoadScene("TheWorld");
-        }
-
     }
 
 }

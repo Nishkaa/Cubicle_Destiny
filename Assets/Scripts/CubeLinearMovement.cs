@@ -32,15 +32,4 @@ public class CubeLinearMovement : MonoBehaviour
         else { if (transform.position.x < begin - dist) { dir = 1; } }
         transform.position = new Vector3(transform.position.x + Time.deltaTime * speed * dir, transform.position.y, transform.position.z);
     }
-    void OnCollisionEnter(Collision col)
-    {
-        // change player name for the name of your players game object
-        if (col.gameObject.name == "Player")
-        {
-          //  FindObjectOfType<SoundManager>().Play("PlayerDeath");
-            Destroy(GameObject.FindWithTag("Player"));
-            SceneManager.LoadScene("TheWorld");
-
-        }
-    }
 }

@@ -21,16 +21,4 @@ public class YellowEnemy : MonoBehaviour
     {
         enemy.SetDestination(Player.position);
     }
-    void OnCollisionEnter(Collision col)
-    {
-        // change player name for the name of your players game object
-        if (col.gameObject.name == "Player")
-        {
-          //  FindObjectOfType<SoundManager>().Play("PlayerDeath");
-            Destroy(GameObject.FindWithTag("Player"));
-            SceneManager.LoadScene("TheWorld");
-        }
-    }
-
-
 }

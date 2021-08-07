@@ -11,14 +11,14 @@ GameObject:
   - component: {fileID: 103182735033401228}
   - component: {fileID: 3619137823321703363}
   - component: {fileID: 1549014287030307701}
-  - component: {fileID: 478166840715238009}
   - component: {fileID: 6386161527997783404}
   - component: {fileID: 4158347302265786608}
   - component: {fileID: 393485516277961499}
   - component: {fileID: 8980513407926486629}
+  - component: {fileID: 4018003753012674161}
   m_Layer: 0
   m_Name: Purple_Enemy
-  m_TagString: Untagged
+  m_TagString: PurpleEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84,20 +84,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &478166840715238009
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2751988633600139521}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.58
-  m_Height: 2.09
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6386161527997783404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4853,3 +4839,16 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!65 &4018003753012674161
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2751988633600139521}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1, y: 2.12, z: 1.1}
+  m_Center: {x: 0, y: 0, z: 0}

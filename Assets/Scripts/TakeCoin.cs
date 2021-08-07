@@ -40,7 +40,14 @@ public class TakeCoin : MonoBehaviour
             
             Destroy(other.gameObject);
         }
-        if(coin == 10)
+
+        if (other.transform.tag == "Heart")
+        {
+            FindObjectOfType<SoundManager>().Play("CoinTake");
+            Destroy(other.gameObject);
+        }
+
+        if (coin == 10)
         {
             FindObjectOfType<SoundManager>().Play("Raise");
             TenPointsMsg.SetActive(true);
