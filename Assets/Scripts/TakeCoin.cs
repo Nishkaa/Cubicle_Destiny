@@ -4,12 +4,14 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 public class TakeCoin : MonoBehaviour
 {
 
+    public Player GivingHealth;
 
     public ParticleSystem CoinPickUpEffect;
+    public ParticleSystem HeartPickupEffect;
 
     public GameObject TenPointsMsg;
     public GameObject TwentyFivePointsMsg;
@@ -40,10 +42,13 @@ public class TakeCoin : MonoBehaviour
             
             Destroy(other.gameObject);
         }
+ 
 
         if (other.transform.tag == "Heart")
         {
-            FindObjectOfType<SoundManager>().Play("CoinTake");
+            GivingHealth.GiveHealth(34);
+            HeartPickupEffect.Emit(200);
+            FindObjectOfType<SoundManager>().Play("HealthPickUp");
             Destroy(other.gameObject);
         }
 

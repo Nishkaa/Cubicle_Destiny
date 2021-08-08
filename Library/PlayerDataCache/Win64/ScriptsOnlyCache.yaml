@@ -9,6 +9,7 @@ ScriptsOnlyBuild:
     - FiftyPointsMessage
     - ForestG
     - HealthBar
+    - HearthSpawn
     - MainMenu
     - Player
     - PointBonus
@@ -68,6 +69,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
@@ -85,21 +90,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11792}
     - Class: 114
-      Script: {instanceID: 12174}
+      Script: {instanceID: 12176}
     - Class: 114
-      Script: {instanceID: 12400}
+      Script: {instanceID: 12402}
     - Class: 114
-      Script: {instanceID: 12414}
+      Script: {instanceID: 12416}
     - Class: 114
-      Script: {instanceID: 12610}
+      Script: {instanceID: 12612}
     - Class: 114
-      Script: {instanceID: 12674}
+      Script: {instanceID: 12676}
     - Class: 114
-      Script: {instanceID: 12836}
+      Script: {instanceID: 12838}
     - Class: 114
-      Script: {instanceID: 12950}
+      Script: {instanceID: 12952}
     - Class: 114
-      Script: {instanceID: 13054}
+      Script: {instanceID: 13056}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -180,21 +185,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12122}
     - Class: 114
-      Script: {instanceID: 12174}
+      Script: {instanceID: 12176}
     - Class: 114
-      Script: {instanceID: 12256}
+      Script: {instanceID: 12258}
     - Class: 114
-      Script: {instanceID: 12400}
+      Script: {instanceID: 12402}
     - Class: 114
-      Script: {instanceID: 12610}
+      Script: {instanceID: 12612}
     - Class: 114
-      Script: {instanceID: 12674}
+      Script: {instanceID: 12676}
     - Class: 114
-      Script: {instanceID: 12960}
+      Script: {instanceID: 12962}
     - Class: 114
-      Script: {instanceID: 13054}
+      Script: {instanceID: 13056}
     - Class: 114
-      Script: {instanceID: 13098}
+      Script: {instanceID: 13100}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -293,27 +298,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12122}
     - Class: 114
-      Script: {instanceID: 12174}
+      Script: {instanceID: 12170}
     - Class: 114
-      Script: {instanceID: 12256}
+      Script: {instanceID: 12176}
     - Class: 114
-      Script: {instanceID: 12400}
+      Script: {instanceID: 12258}
     - Class: 114
-      Script: {instanceID: 12610}
+      Script: {instanceID: 12402}
     - Class: 114
-      Script: {instanceID: 12674}
+      Script: {instanceID: 12612}
     - Class: 114
-      Script: {instanceID: 12960}
+      Script: {instanceID: 12676}
     - Class: 114
-      Script: {instanceID: 12994}
+      Script: {instanceID: 12962}
     - Class: 114
-      Script: {instanceID: 13054}
+      Script: {instanceID: 12996}
     - Class: 114
-      Script: {instanceID: 13058}
+      Script: {instanceID: 13056}
     - Class: 114
-      Script: {instanceID: 13086}
+      Script: {instanceID: 13060}
     - Class: 114
-      Script: {instanceID: 13098}
+      Script: {instanceID: 13088}
+    - Class: 114
+      Script: {instanceID: 13100}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -627,7 +634,7 @@ ScriptsOnlyBuild:
     className: TMP_Asset
   - hash:
       serializedVersion: 2
-      Hash: 15bd6a9006c14f6d437e29133b8ce0e6
+      Hash: e42bcba37e632be360c1d249cce0142a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TakeCoin
@@ -703,6 +710,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: c16875a4167dd6e10b526e1a91f9322d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HearthSpawn
   - hash:
       serializedVersion: 2
       Hash: 3cae62e09a50c5d5aae8d0536b3d8fde
@@ -1081,6 +1094,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: c16875a4167dd6e10b526e1a91f9322d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HeartSpawn
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity

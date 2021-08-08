@@ -208,7 +208,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 387398864}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -3, z: 0}
   m_LocalScale: {x: 100, y: 1, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
@@ -505,72 +505,72 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26a2d6e9b116a43468b0e9ff4ee96a99, type: 3}
---- !u!1001 &4118252511713992252
+--- !u!1001 &3988436307437212619
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4118252513683824838, guid: 8aed3cc2817e0794d8e048d3e75b6ca7,
+    - target: {fileID: 3988436307096273609, guid: 1a340738cbafba94b9301a8ca5efad73,
+        type: 3}
+      propertyPath: m_Name
+      value: Hearth_Pickup
+      objectReference: {fileID: 0}
+    - target: {fileID: 3988436307096273615, guid: 1a340738cbafba94b9301a8ca5efad73,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4118252513683824838, guid: 8aed3cc2817e0794d8e048d3e75b6ca7,
+    - target: {fileID: 3988436307096273615, guid: 1a340738cbafba94b9301a8ca5efad73,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4118252513683824838, guid: 8aed3cc2817e0794d8e048d3e75b6ca7,
+    - target: {fileID: 3988436307096273615, guid: 1a340738cbafba94b9301a8ca5efad73,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4118252513683824838, guid: 8aed3cc2817e0794d8e048d3e75b6ca7,
+    - target: {fileID: 3988436307096273615, guid: 1a340738cbafba94b9301a8ca5efad73,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4118252513683824838, guid: 8aed3cc2817e0794d8e048d3e75b6ca7,
+    - target: {fileID: 3988436307096273615, guid: 1a340738cbafba94b9301a8ca5efad73,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4118252513683824838, guid: 8aed3cc2817e0794d8e048d3e75b6ca7,
+    - target: {fileID: 3988436307096273615, guid: 1a340738cbafba94b9301a8ca5efad73,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4118252513683824838, guid: 8aed3cc2817e0794d8e048d3e75b6ca7,
+    - target: {fileID: 3988436307096273615, guid: 1a340738cbafba94b9301a8ca5efad73,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4118252513683824838, guid: 8aed3cc2817e0794d8e048d3e75b6ca7,
+    - target: {fileID: 3988436307096273615, guid: 1a340738cbafba94b9301a8ca5efad73,
         type: 3}
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 4118252513683824838, guid: 8aed3cc2817e0794d8e048d3e75b6ca7,
+    - target: {fileID: 3988436307096273615, guid: 1a340738cbafba94b9301a8ca5efad73,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4118252513683824838, guid: 8aed3cc2817e0794d8e048d3e75b6ca7,
+    - target: {fileID: 3988436307096273615, guid: 1a340738cbafba94b9301a8ca5efad73,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4118252513683824838, guid: 8aed3cc2817e0794d8e048d3e75b6ca7,
+    - target: {fileID: 3988436307096273615, guid: 1a340738cbafba94b9301a8ca5efad73,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4118252513683824843, guid: 8aed3cc2817e0794d8e048d3e75b6ca7,
-        type: 3}
-      propertyPath: m_Name
-      value: Heart
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8aed3cc2817e0794d8e048d3e75b6ca7, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 1a340738cbafba94b9301a8ca5efad73, type: 3}

@@ -71,14 +71,18 @@ public class Player : MonoBehaviour
             controller.Move(moveDirection * Time.deltaTime);
         }
 
-      void TakeDamage(int damage)
+      public void TakeDamage(int damage)
         {
             currentHealth -= damage;
             healthbar.SetHealth(currentHealth);
     }
+  public void GiveHealth(int health)
+    {
+        currentHealth += health;
+        healthbar.SetHealth(currentHealth);
+    }
     void OnCollisionEnter(Collision col)
     {
-
         if (col.gameObject.name == "Purple_Enemy(Clone)")
         {
             TakeDamage(34);
