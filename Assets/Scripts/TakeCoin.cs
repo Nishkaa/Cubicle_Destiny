@@ -11,6 +11,7 @@ public class TakeCoin : MonoBehaviour
     public Player GivingHealth;
 
     public ParticleSystem CoinPickUpEffect;
+    public ParticleSystem CoinPickUpEffectLvl2;
     public ParticleSystem HeartPickupEffect;
 
     public GameObject TenPointsMsg;
@@ -42,7 +43,17 @@ public class TakeCoin : MonoBehaviour
             
             Destroy(other.gameObject);
         }
- 
+        if (other.transform.tag == "CoinLvl2")
+        {
+            FindObjectOfType<SoundManager>().Play("CoinTake");
+            CoinPickUpEffect.Emit(200);
+            coin++;
+            textCoins.text = coin.ToString();
+
+            Destroy(other.gameObject);
+        }
+
+
 
         if (other.transform.tag == "Heart")
         {

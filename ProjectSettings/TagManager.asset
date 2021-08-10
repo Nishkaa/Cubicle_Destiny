@@ -7,6 +7,9 @@ TagManager:
   - Coin
   - PurpleEnemy
   - Heart
+  - EnemyThree
+  - EnemyTwo
+  - CoinLvl2
   layers:
   - Default
   - TransparentFX

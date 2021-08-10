@@ -17,10 +17,10 @@ public class YellowEnemySpawn : MonoBehaviour
 				Element element = elements[0];
 				if (element.CanPlace())
 				{
-					Vector3 position = new Vector3(x, 5f, z);
+					Vector3 position = new Vector3(x, 1f, z);
 					Vector3 offset = new Vector3(Random.Range(-0.75f, 0.75f), 0f, Random.Range(-0.75f, 0.75f));
 					Vector3 rotation = new Vector3(Random.Range(0, 5f), Random.Range(0, 360f), Random.Range(0, 5f));
-					Vector3 scale = Vector3.one * Random.Range(2.0f, 2.0f);
+					Vector3 scale = Vector3.one * Random.Range(1.0f, 1.0f);
 
 					GameObject newElement = Instantiate(element.GetRandom());
 					newElement.transform.SetParent(transform);

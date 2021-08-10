@@ -8,6 +8,7 @@ using UnityEngine.Audio;
 using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
+    Animator m_Animator;
     public int maxHealth = 100;
     public int currentHealth;
 
@@ -24,6 +25,7 @@ public class Player : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        m_Animator = gameObject.GetComponent<Animator>();
 
         currentHealth = maxHealth;
         healthbar.SetMaxHealth(maxHealth);
@@ -83,17 +85,18 @@ public class Player : MonoBehaviour
     }
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.name == "Purple_Enemy(Clone)")
+        if (col.gameObject.name == "EnemyOne(Clone)")
+        {
+            m_Animator.SetTrigger("Jump");
+            TakeDamage(34);
+            FindObjectOfType<SoundManager>().Play("PlayerTakingDamage");
+        }
+        if (col.gameObject.name == "EnemyTwo(Clone)")
         {
             TakeDamage(34);
             FindObjectOfType<SoundManager>().Play("PlayerTakingDamage");
         }
-        if (col.gameObject.name == "CuberStarEnemy(Clone)")
-        {
-            TakeDamage(34);
-            FindObjectOfType<SoundManager>().Play("PlayerTakingDamage");
-        }
-        if (col.gameObject.name == "YellowEnemy(Clone)")
+        if (col.gameObject.name == "EnemyThree(Clone)")
         {
             TakeDamage(34);
             FindObjectOfType<SoundManager>().Play("PlayerTakingDamage");

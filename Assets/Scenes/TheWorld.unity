@@ -110,7 +110,7 @@ NavMeshSettings:
     agentRadius: 1
     agentHeight: 1
     agentSlope: 46.6
-    agentClimb: 0.4
+    agentClimb: 0.5
     ledgeDropHeight: 3
     maxJumpAcrossDistance: 0
     minRegionArea: 2
@@ -215,86 +215,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 76114786}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &288837692
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8220934640334544261, guid: 128f52702e34a874a8d1431ddaf1072f,
-        type: 3}
-      propertyPath: m_Name
-      value: YellowEnemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 8220934640334544263, guid: 128f52702e34a874a8d1431ddaf1072f,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 430453869}
-    - target: {fileID: 8220934640334544263, guid: 128f52702e34a874a8d1431ddaf1072f,
-        type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 2117077120}
-    - target: {fileID: 8220934640334544314, guid: 128f52702e34a874a8d1431ddaf1072f,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 8220934640334544314, guid: 128f52702e34a874a8d1431ddaf1072f,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.17
-      objectReference: {fileID: 0}
-    - target: {fileID: 8220934640334544314, guid: 128f52702e34a874a8d1431ddaf1072f,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 8220934640334544314, guid: 128f52702e34a874a8d1431ddaf1072f,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8220934640334544314, guid: 128f52702e34a874a8d1431ddaf1072f,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8220934640334544314, guid: 128f52702e34a874a8d1431ddaf1072f,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8220934640334544314, guid: 128f52702e34a874a8d1431ddaf1072f,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8220934640334544314, guid: 128f52702e34a874a8d1431ddaf1072f,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 8220934640334544314, guid: 128f52702e34a874a8d1431ddaf1072f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8220934640334544314, guid: 128f52702e34a874a8d1431ddaf1072f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8220934640334544314, guid: 128f52702e34a874a8d1431ddaf1072f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: -790516946702369438, guid: 128f52702e34a874a8d1431ddaf1072f, type: 3}
-  m_SourcePrefab: {fileID: 100100000, guid: 128f52702e34a874a8d1431ddaf1072f, type: 3}
 --- !u!1 &351363339
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,7 +369,7 @@ GameObject:
   - component: {fileID: 358255649}
   - component: {fileID: 358255648}
   m_Layer: 0
-  m_Name: PurpleEnemySpawn
+  m_Name: EnemyOneSpawn
   m_TagString: PurpleEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -486,7 +406,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 475991282}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &367980177
 GameObject:
@@ -1152,12 +1072,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 789ccdf562e48d145a5703583a4fa541, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &430453869 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 879327505508805246, guid: db2b236c0f617b74890d61633e6f16c9,
-    type: 3}
-  m_PrefabInstance: {fileID: 430453851}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &455101902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1348,9 +1262,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 2.672, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1496994933}
   - {fileID: 358255649}
   - {fileID: 849753111}
+  - {fileID: 2048366387}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1601,7 +1515,7 @@ GameObject:
   - component: {fileID: 849753111}
   - component: {fileID: 849753110}
   m_Layer: 0
-  m_Name: CubeEnemySpawn
+  m_Name: EnemyTwoSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1638,7 +1552,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 475991282}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1129001733
 GameObject:
@@ -2010,7 +1924,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forestSize: 300
-  elementSpacing: 9
+  elementSpacing: 8
   elements:
   - name: CoinSpawn
     density: 10
@@ -2355,7 +2269,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: CoinTake
     clip: {fileID: 8300000, guid: 5c46c70377c99b14996b103f63e85e28, type: 3}
-    volume: 100
+    volume: 69
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -2687,56 +2601,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1465939703}
   m_CullTransparentMesh: 0
---- !u!1 &1496994931
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1496994933}
-  - component: {fileID: 1496994932}
-  m_Layer: 0
-  m_Name: YellowEnemySpawn
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1496994932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1496994931}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcdaff18727bd2843ad1b15d56c1fb2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forestSize: 300
-  elementSpacing: 10
-  elements:
-  - name: YellowEnemy
-    density: 3
-    prefabs:
-    - {fileID: 2117077119}
---- !u!4 &1496994933
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1496994931}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 53.142525, y: -9.6469145, z: 209.06009}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 475991282}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1505330211
 GameObject:
   m_ObjectHideFlags: 0
@@ -3213,6 +3077,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1976860026}
   m_CullTransparentMesh: 0
+--- !u!1 &2048366386
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2048366387}
+  - component: {fileID: 2048366388}
+  m_Layer: 0
+  m_Name: EnemyThreeSpawn
+  m_TagString: EnemyThree
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2048366387
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048366386}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 336.66248, y: -25.153782, z: 328.89914}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 475991282}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2048366388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048366386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcdaff18727bd2843ad1b15d56c1fb2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forestSize: 300
+  elementSpacing: 10
+  elements:
+  - name: EnemyThree
+    density: 2
+    prefabs:
+    - {fileID: 1065533165216247404, guid: 66238227237873945ac3f44802018637, type: 3}
 --- !u!1 &2069659280
 GameObject:
   m_ObjectHideFlags: 0
@@ -3450,34 +3364,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 2072240415}
---- !u!1 &2117077119 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8220934640334544261, guid: 128f52702e34a874a8d1431ddaf1072f,
-    type: 3}
-  m_PrefabInstance: {fileID: 288837692}
-  m_PrefabAsset: {fileID: 0}
---- !u!195 &2117077120
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2117077119}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!1001 &3177425418503876486
 PrefabInstance:
   m_ObjectHideFlags: 0
