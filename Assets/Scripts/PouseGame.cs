@@ -2,20 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
 public class PouseGame : MonoBehaviour
 {
     public bool gamePaused = false;
     public GameObject pauseMenu;
     public GameObject MainMenu;
- //   public GameObject Restart;
+    CharacterController control;
+    //   public GameObject Restart;
     void Update()
     {
         if (Input.GetButtonDown("Cancel"))
         {
             if(gamePaused == false)
             {
-              
+  
                 Time.timeScale = 0;
                 gamePaused = true;
                 Cursor.visible = true;
@@ -32,6 +32,7 @@ public class PouseGame : MonoBehaviour
                 Cursor.visible = false;
                 gamePaused = false;
                 Time.timeScale = 1;
+               
             }
         }
     }

@@ -5,7 +5,6 @@ using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 using System;
 using UnityEngine.Audio;
-using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     Animator m_Animator;

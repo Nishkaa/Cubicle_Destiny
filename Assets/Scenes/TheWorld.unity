@@ -770,6 +770,11 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 879327505508805240, guid: db2b236c0f617b74890d61633e6f16c9,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9acffa51cd3481247b54251845f71fbc, type: 2}
     - target: {fileID: 879327505508805242, guid: db2b236c0f617b74890d61633e6f16c9,
         type: 3}
       propertyPath: m_Name
@@ -1052,6 +1057,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GivingHealth: {fileID: 430453866}
   CoinPickUpEffect: {fileID: 430453853}
+  CoinPickUpEffectLvl2: {fileID: 0}
   HeartPickupEffect: {fileID: 430453852}
   TenPointsMsg: {fileID: 1296556513}
   TwentyFivePointsMsg: {fileID: 351363339}
@@ -1624,7 +1630,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.010000001, y: 0.9264102}
   m_AnchorMax: {x: 0.172, y: 0.97588634}
-  m_AnchoredPosition: {x: 1.684967, y: 0.5}
+  m_AnchoredPosition: {x: 1.6849976, y: 0.5}
   m_SizeDelta: {x: -4.6300373, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1265062563
@@ -2269,7 +2275,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: CoinTake
     clip: {fileID: 8300000, guid: 5c46c70377c99b14996b103f63e85e28, type: 3}
-    volume: 69
+    volume: 60
     pitch: 1
     loop: 0
     source: {fileID: 0}
